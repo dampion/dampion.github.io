@@ -1,502 +1,478 @@
 <!doctype html>
 <html>
 	<head>
-	
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
 	
-	<title>Evan Chen</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
-	<style type="text/css">
-	@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
+	<title>Evan Chen - CV</title>
+
+	<style>
+	/*! normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:hover,a:active{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.75em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}p,pre{margin:1em 0}pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:75%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;*overflow:visible}button[disabled],input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+/* General, overall styling */
 body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
-}
-a {
-	color: #2ecc71;
-}
-a:focus,
-a:hover {
-	color: #f1c40f;
-	text-decoration: none;
-}
-p {
-	line-height: 1.5;
-	margin: 0;
-}
-p + p {
-	margin-top: 10px;
-}
-h1,
-h2,
-h3,
-h4 {
-	margin-top: 0
-}
-section {
-	margin-top: 30px;
-}
-li {
-	line-height: 1.8;
-	list-style: none;
-}
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
-}
-blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
-}
-em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
-}
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
-}
-.container {
-	max-width: 750px;
-	padding: 0 30px;
-}
-.col-sm-6 {
-	margin-bottom: 10px;
-}
-.col-sm-12 h4 {
-	margin-top: 12px; 
-}
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
-}
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-#profiles .network {
-	text-transform: capitalize;
-}
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
+	background: #F9F9F9;
+	font-size: 0.9em;
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 100px;
 }
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
+em {
+	color: #999;
 }
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
+
+p {
+	line-height: 1.4;
 }
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
+
+a {
+	color: #31A6D6;
 }
+
+a:visited {
+	color: #3061A5;
+}
+
+a:hover {
+	color: #3061A5;
+}
+
+ul {
+	margin-bottom: 0;
+}
+section {
+	margin-bottom: 2em;
+}
+
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+/* End general, overall styling */
+
+/* Header name styling */
+
+header {
+	background: #68B6E3;
+	padding: 50px;
+	margin-bottom: 50px;
+}
+
+header h1 {
+	color: #FFFFFF;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+header h2 {
+	color: #F3F3F3;
+	font-size: 1em;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+/* End header name styling */
+
+/* Set width of main body of CV */
+.container {
+	max-width: 700px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+/* End */
+
+/* Styling Basics (Name, Contact, About, Profiles) */
+
+#basics {
+	margin-bottom: 10px;
+	border-top: 1px #E2E2E2 solid;
+	border-bottom: 1px #E2E2E2 solid;
+}
+#basics h3 {
+	margin-top: 1.5em;
+	margin-bottom: 10px;
+}
+#basics .contact strong {
+	line-height: 1.3;
+	float: left;
+	width: 80px;
+}
+
+.contact h3 {
+	padding-bottom: 10px;
+}
+
+.website,
+.email,
+.phone {
+	margin-bottom: 10px;
+	float: left;
+	width: 50%;
+}
+
+.summary {
+	padding-top: 5px;
+	clear: both;
+}
+
+#profiles {
+	overflow: hidden;
+}
+
+#profiles .item {
+	float: left;
+	width: 50%;
+}
+
+.username{
+	margin-top: 10px;
+}
+
+/* End 'Basics' Styling */
+
+/* Work and volunteering experience styling */
+
+.work_date,
+.work_position,
+.work_website,
+.institution,
+.study_date,
+.qualification {
+	margin-bottom: 10px;
+	float: left;
+	width: 30%;
+}
+
+.courses {
+	clear: both;
+}
+
+.dissertation {
+	margin-top: 10px;
+}
+
+#work,
+#volunteer {
+	padding-bottom: 5px;
+	border-bottom: 1px #E2E2E2 solid;
+}
+
+#work .item,
+#volunteer .item {
+	margin: 25px 0;
+}
+
+/* End work and volunteering */
+
+/* Skills, languages, interests and references styling */
+
+#skills {
+	margin-bottom: 10px;
+	border-bottom: 1px #E2E2E2 solid;
+	padding-bottom: 5px;
+}
+
+#skills .item,
+#languages .item {
+	margin: 0 0 25px 0;
+}
+
+#interests .item {
+	margin-bottom: 25px;
+}
+
+#skills {
+	overflow: hidden;
+}
+
+#languages .item,
+#interests .item,
+#skills .item {
+	float: left;
+	width: 50%;
+}
+
+#references,
+#interests {
+	clear: both;
+}
+
+/* End styling */
 
 	</style>
 	
 	</head>
 	<body>
 	
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>
-						Evan Chen
-					</h1>
-					<h2>
-						Programmer
-					</h2>
-				</div>
-			</div>
-		</div>
+	<header>
+	<h1>Evan Chen</h1>
+	<h2>Programmer</h2>
 	</header>
-	<div id="content" class="container">
 
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">Evanchen79@gmail.com</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">0928-307-205</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				<div class="website">
-					<a href=""></a>
-				</div>
-			</div>
-			</div>
+	<div id="content" class="container">
+	<section id="basics">
+		<div class="contact">
+		<h3>Contact</h3>
+		<div class="email">
+			<strong>Email</strong>
+			Evanchen79@gmail.com
 		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
+		<div class="phone">
+			<strong>Phone</strong>
+			0928-307-205
+		</div>
+		</div>
+		<div class="summary">
 			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
 			<p>I hail from Taiwan. I earned the degrees from the University of Sun Yat-San. Before starting Alpha Digital Co., I worked for Pouchen as a full-time material engineer. While working focuses on applied information theory, mostly I am limited to the cultures of it and can’t find a way improving but follow the original rules. I could tell you about it, but THAT would NOT be a “length-limited” conversation!</p>
 		</div>
+		<section id="profiles">
+			<div class="item">
+				<strong class="network">
+					Github
+				</strong>
+				<div class="url">
+					<a href="https://github.com/dampion">
+						dampion
+					</a>
+				</div>
+			</div>
+			<div class="item">
+				<strong class="network">
+					Linkedin
+				</strong>
+				<div class="url">
+					<a href="https://www.linkedin.com/in/evan-chen-6a9308b5/">
+						Evan Chen
+					</a>
+				</div>
+			</div>
+		</section>
 	</section>
-	<section id="profiles" class="row">
-		<aside class="col-sm-3">
-			<h3>Profiles</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-				<div class="col-sm-6">
-					<strong class="network">
-						Github
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://github.com/dampion">dampion</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						Linkedin
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://www.linkedin.com/in/evan-chen-6a9308b5/">Evan Chen</a>
-						</div>
-					</div>
-				</div>
+
+	<section id="work">
+		<h2>Work</h2>
+		<div class="item">
+			<h3 class="work_name">
+				Alpha Digital Co., Ltd.
+			</h3>
+			
+			<div class="work_position">
+				Software Engineer/ Front-End
+			</div>
+
+			<div class="work_date">
+				<span class="startDate">
+					2017-09-04
+				</span>
+				<span class="endDate">
+					- 2018-05-31
+				</span>
+			</div>
+
+
+
+			<div class="summary">
+				<p>I help build innovative enterprise software applications, develop new user-facing features using Due and React, build reusable components and front-end libraries for future use, and optimizing components for maximum performance with the cooperation to back-end software engineer for api bridging. Also, I am able to develop responsive pages that will work on both desktop and mobile and resolve defects/bugs during QA testing, pre-production, production, and post-release patches.</p>
+			</div>
+			<ul class="highlights">
+				<li>Build innovative enterprise software applications</li>
+				<li>Develop new user-facing features using Due and React, build reusable components and front-end libraries for future use</li>
+				<li>Optimizing components for maximum performance with the cooperation to back-end software engineer for api bridging.</li>
+			</ul>
+		</div>
+		<div class="item">
+			<h3 class="work_name">
+				Pou Chen Coporation
+			</h3>
+			
+			<div class="work_position">
+				Material Process Engineer
+			</div>
+
+			<div class="work_date">
+				<span class="startDate">
+					2016-11-01
+				</span>
+				<span class="endDate">
+					- 2017-05-15
+				</span>
+			</div>
+
+			<div class="work_website">
+				<a href="http://www.pouchen.com">http://www.pouchen.com</a>
+			</div>
+
+
+			<div class="summary">
+				<p>Passion in excellence has a name, Pou Chen. We make shoes that people love and support. Analyzing and resolving the problem we might have during manufacture process. Had the basic tech of basic materials like leather, synthetics, textile and TPU. Also, the great communication is most important , especially during teamwork. Really had lots of lessons here.</p>
+			</div>
+			<ul class="highlights">
+				<li>Build the reuse system flow based the current EPR</li>
+				<li>Analyze the experiment data from the Lab.</li>
+				<li>Co-operate with Dept. of Shippment and Vendors</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="volunteer">
+		<h2>Volunteer</h2>
+		<div class="item">
+			<h3 class="company">
+				Red Cross
+			</h3>
+			
+			<div class="work_position">
+				Team Leader
+			</div>
+
+			<div class="work_date">
+				<span class="startDate">
+					2012-10-01
+				</span>
+				<span class="endDate">
+					- 2013-08-31
+				</span>
+			</div>
+
+			<div class="work_website">
+				<a href="http://www.redcross.org">http://www.redcross.org</a>
+			</div>
+			<div class="summary">
+				<p>Global movement of free sharing for young kids.</p>
+			</div>
+			<ul class="highlights">
+				<li>Bring the teamwork perspective to the kids studying in the remote areas</li>
+				<li>Work with people from different places and learn from each pros and cons</li>
+				<li>Make my life more colorful which makes my working efficiency better and watch things in a wider perspective</li>
+			</ul>
+		</div>
+	</section>
+	
+	<section id="education">
+		<h2>Education</h2>
+		<div class="item">
+			
+			<div class="institution">
+				University of Sun Yat-San
+			</div>
+
+			<div class="study_date">
+				<span class="startDate">
+					2012-09-01
+				</span>
+				<span class="endDate">
+					- 2016-06-30
+				</span>
+			</div>
+
+
+			<ul class="courses">
+				<li>Theory of Relativity</li>
+				<li>Theory of Semi-conductors</li>
+			</ul>
+
+		</div>
+	</section>
+	
+	<section id="skills">
+		<h2>Skills</h2>
+		<div class="item">
+			<div class="name">
+				Front-End Development
+			</div>
+			<div class="level">
+				<em>Master</em>
+			</div>
+			<ul class="keywords">
+				<li>VueJS</li>
+				<li>Vuex</li>
+				<li>VueRouter</li>
+				<li>React</li>
+				<li>Redux</li>
+			</ul>
+		</div>
+		<div class="item">
+			<div class="name">
+				Back-end Development
+			</div>
+			<div class="level">
+				<em>Moderate</em>
+			</div>
+			<ul class="keywords">
+				<li>NodeJS</li>
+				<li>MongoDB</li>
+				<li>Firebase</li>
+				<li>PHP</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="languages">
+		<h2>Languages</h2>
+		<div class="item">
+			<div class="language">
+				Mandarin
+			</div>
+			<div class="level">
+				<em>Native Speaker</em>
+			</div>
+		</div>
+		<div class="item">
+			<div class="language">
+				English
+			</div>
+			<div class="level">
+				<em>Moderate</em>
+			</div>
+		</div>
+		<div class="item">
+			<div class="language">
+				Sign language
+			</div>
+			<div class="level">
+				<em>Good</em>
+			</div>
+		</div>
+		<div class="item">
+			<div class="language">
+				Japanese
+			</div>
+			<div class="level">
+				<em>beginner</em>
 			</div>
 		</div>
 	</section>
 
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Alpha Digital Co., Ltd.</span>
-					<span class="date">
-						2017-09-04 — 2018-05-31
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href=""></a>
-				</div>
-				<div class="position">
-					Software Engineer/ Front-End
-				</div>
-				<div class="summary">
-					<p>I help build innovative enterprise software applications, develop new user-facing features using Due and React, build reusable components and front-end libraries for future use, and optimizing components for maximum performance with the cooperation to back-end software engineer for api bridging. Also, I am able to develop responsive pages that will work on both desktop and mobile and resolve defects/bugs during QA testing, pre-production, production, and post-release patches.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Build innovative enterprise software applications</li>
-					<li class="bullet">Develop new user-facing features using Due and React, build reusable components and front-end libraries for future use</li>
-					<li class="bullet">Optimizing components for maximum performance with the cooperation to back-end software engineer for api bridging.</li>
-				</ul>
+	<section id="interests">
+		<h2>Interests</h2>
+		<div class="item">
+			<div class="name">
+				Travel
 			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Pou Chen Coporation</span>
-					<span class="date">
-						2016-11-01 — 2017-05-15
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.pouchen.com">http://www.pouchen.com</a>
-				</div>
-				<div class="position">
-					Material Process Engineer
-				</div>
-				<div class="summary">
-					<p>Passion in excellence has a name, Pou Chen. We make shoes that people love and support. Analyzing and resolving the problem we might have during manufacture process. Had the basic tech of basic materials like leather, synthetics, textile and TPU. Also, the great communication is most important , especially during teamwork. Really had lots of lessons here.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Build the reuse system flow based the current EPR</li>
-					<li class="bullet">Analyze the experiment data from the Lab.</li>
-					<li class="bullet">Co-operate with Dept. of Shippment and Vendors</li>
-				</ul>
-			</div>
-			</div>
+			<ul class="keywords">
+				<li>Experience</li>
+				<li>Cultures</li>
+				<li>Friends</li>
+			</ul>
 		</div>
-	</section>
-
-	<section id="volunteer" class="row">
-		<aside class="col-sm-3">
-			<h3>Volunteer</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Red Cross</span>
-					<span class="date">
-						2012-10-01 — 2013-08-31
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.redcross.org">http://www.redcross.org</a>
-				</div>
-				<div class="position">
-					Team Leader
-				</div>
-				<div class="summary">
-					<p>Global movement of free sharing for young kids.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Bring the teamwork perspective to the kids studying in the remote areas</li>
-					<li class="bullet">Work with people from different places and learn from each pros and cons</li>
-					<li class="bullet">Make my life more colorful which makes my working efficiency better and watch things in a wider perspective</li>
-				</ul>
+		<div class="item">
+			<div class="name">
+				Exercise
 			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>University of Sun Yat-San</span>
-					<span class="date">
-						2012-09-01 — 2016-06-30
-					</span>
-				</h4>
-				<div class="area">
-					Dept. of OptoEletrionic and Material Science
-				</div>
-				<div class="studyType">
-					Bachelor
-				</div>
-				<h4>Courses</h4>
-				<ul class="courses">
-					<li>Theory of Relativity</li>
-					<li>Theory of Semi-conductors</li>
-				</ul>
-			</div>
-			</div>
+			<ul class="keywords">
+				<li>Basketball</li>
+				<li>Swimming</li>
+				<li>Hiking and Camping</li>
+				<li>Working out</li>
+			</ul>
 		</div>
 	</section>
 	
 	
-	
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Front-End Development</h4>
-				</div>
-				<ul class="keywords">
-					<li>VueJS</li>
-					<li>Vuex</li>
-					<li>VueRouter</li>
-					<li>React</li>
-					<li>Redux</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Back-end Development</h4>
-				</div>
-				<ul class="keywords">
-					<li>NodeJS</li>
-					<li>MongoDB</li>
-					<li>Firebase</li>
-					<li>PHP</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="languages" class="row">
-		<aside class="col-sm-3">
-			<h3>Languages</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Mandarin</strong>
-				</div>
-				<div class="fluency">
-					Native Speaker
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>English</strong>
-				</div>
-				<div class="fluency">
-					Moderate
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Sign language</strong>
-				</div>
-				<div class="fluency">
-					Good
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Japanese</strong>
-				</div>
-				<div class="fluency">
-					beginner
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="interests" class="row">
-		<aside class="col-sm-3">
-			<h3>Interests</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Travel</h4>
-				</div>
-				<ul class="keywords">
-					<li>Experience</li>
-					<li>Cultures</li>
-					<li>Friends</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Exercise</h4>
-				</div>
-				<ul class="keywords">
-					<li>Basketball</li>
-					<li>Swimming</li>
-					<li>Hiking and Camping</li>
-					<li>Working out</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-
 	</div>
-	
 	</body>
 </html>
