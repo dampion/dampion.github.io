@@ -2,23 +2,73 @@
   <head>
     <title>Demo Share</title>
     <style>
+      .header {
+        padding: 30px 0 50px 0;
+        text-align: center;
+        vertical-align: center;
+      }
       h1, h2, p {
         text-align: center;
+        padding: 0;
+        margin: 0;
       }
-      section {
+      .section {
         display: flex;
         flex-direction: row;
         justify-content: center;
         flex: 1;
       }
+      .demoBox {
+        width: 25%;
+        padding: 10px;
+        border: 2.5px solid #000;
+        border-radius: 10px;
+        height: 250px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .demoBox img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 30px;
+      }
+      .demoBox p.title {
+        padding: 0 0 10px;
+        font-size: 19px;
+      }
+      .demoBox p.author {
+        padding: 4px 0 12px;
+        font-size: 14px;
+      }
     </style>
   </head>
   <body>
-    <h2>Dampion Page</h2>
+    <div class="header">
+      <h2>Dampion Page</h2>
+    </div>
     <div class="section">
+      <div class="demoBox" onclick="enterDoc('./vueFireworks/index.html')">
+        <img src="./images/vuejs.jpg"/>
+        <p class="title">Vue Fireworks</p>
+        <p class="author">Dampion</p>
+        <p class="date">2018-01-16</p>
+      </div>
+      <div class="demoBox">
+        <p>hi demo</p>
+      </div>
+      <div class="demoBox">
+        <p>hi demo</p>
+      </div>
       <div class="demoBox">
         <p>hi demo</p>
       </div>
     </div>
   </body>
+  <script>
+    function enterDoc(path) {
+      let newlink = document.createElement('a');
+      newlink.setAttribute('href', path);
+      newlink.click();
+    }
+  </script>
 </html>
