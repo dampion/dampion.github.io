@@ -1,66 +1,55 @@
 <html>
   <head>
     <title>Demo Share</title>
-    <style>
-      .header {
-        padding: 30px 0 50px 0;
-        text-align: center;
-        vertical-align: center;
-      }
-      h1, h2, p {
-        text-align: center;
-        padding: 0;
-        margin: 0;
-      }
-      .section {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex: 1;
-      }
-      .demoBox {
-        width: 25%;
-        padding: 10px;
-        border: 2.5px solid #000;
-        border-radius: 10px;
-        height: 250px;
-        text-align: center;
-        cursor: pointer;
-      }
-      .demoBox img {
-        width: 100%;
-        height: auto;
-        margin: 0 auto 30px;
-      }
-      .demoBox p.title {
-        padding: 0 0 10px;
-        font-size: 19px;
-      }
-      .demoBox p.author {
-        padding: 4px 0 12px;
-        font-size: 14px;
-      }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="header">
-      <h2>Dampion Page</h2>
-    </div>
-    <div class="section">
-      <div class="demoBox" onclick="enterDoc('./vueFireworks/index.html')">
-        <img src="./images/vuejs.jpg"/>
-        <p class="title">Vue Fireworks</p>
-        <p class="author">Dampion</p>
-        <p class="date">2018-01-16</p>
+    <div class="containeer pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h5 class="text-white h4">To be updated</h5>
+            <span class="text-muted">This is the dampion page for demo and tech-share.</span>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark navbar-slideBtn">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      <div class="header">
+        <h2>Dampion Page</h2>
       </div>
-      <div class="demoBox">
-        <p>hi demo</p>
-      </div>
-      <div class="demoBox">
-        <p>hi demo</p>
-      </div>
-      <div class="demoBox">
-        <p>hi demo</p>
+      <div class="section">
+        <div class="demoBox" onclick="enterDoc('./vueFireworks/index.html')">
+          <img src="./images/vuejs.jpg"/>
+          <p class="title">Vue Fireworks</p>
+          <p class="author">Dampion</p>
+          <p class="date">2018-01-16</p>
+        </div>
+        <div class="demoBox">
+          <p>hi demo</p>
+        </div>
+        <div class="demoBox">
+          <p>hi demo</p>
+        </div>
+        <div class="demoBox">
+          <p>hi demo</p>
+        </div>
+        <div class="demoBox">
+          <p>hi demo</p>
+        </div>
+        <div class="demoBox">
+          <p>hi demo</p>
+        </div>
       </div>
     </div>
   </body>
